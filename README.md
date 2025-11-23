@@ -62,7 +62,7 @@ The goal is to identify vendor efficiency, profitability, inventory risks, and o
 df["UnsoldInventoryValue"] = (df["TotalPurchaseQuantity"] - df["TotalSalesQuantity"]) * df["PurchasePrice"]
 - Ranked vendors by capital locked in unsold stock.
 
-6. Statistical Analysis
+### 6. Statistical Analysis
 📈 Confidence Intervals
 - Computed 95% confidence intervals for profit margins:
 - Top-performing vendors (top 25% sales).
@@ -74,24 +74,24 @@ df["UnsoldInventoryValue"] = (df["TotalPurchaseQuantity"] - df["TotalSalesQuanti
 - If p < 0.05 → significant difference in margins.
 - Else → no significant difference.
 
-📊 Key Findings
+### 📊 Key Findings
 - High-margin but low-sales brands → promotional opportunities.
 - Top vendors dominate procurement → dependency risk.
 - Bulk purchasing reduces unit price → cost optimization strategy.
 - Slow-moving inventory vendors → excess capital locked in stock.
 - Profit margins differ significantly between top and low-performing vendors (validated via t-test).
 
-🛠️ Tech Stack
+### 🛠️ Tech Stack
 - Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy, SQLAlchemy)
 - SQLite for database management
 - Logging for ingestion tracking
 - Statistical Analysis (confidence intervals, t-tests)
 
-🚀 Next Steps
+### 🚀 Next Steps
 - Extend analysis with predictive modeling (sales forecasting, vendor risk scoring).
 - Automate reporting for procurement and finance teams.
 
-📂 Repository Structure
+### 📂 Repository Structure
 ├── data/                  # Raw CSV files
 ├── logs/                  # Ingestion logs
 ├── inventory.db           # SQLite database
